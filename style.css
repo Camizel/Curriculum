@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
+/* Estilos globales */
 {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
     font-family: 'Poppins', sans-serif; 
 }
 
+/* Estilos del cuerpo de la pagina */
 body{
     background: lightpink;
     display: flex;
@@ -15,6 +17,7 @@ body{
     min-height: 100vh;
 }
 
+/* contenedor principal */
 .container{
     position: relative;
     width: 100%;
@@ -27,12 +30,14 @@ body{
     box-shadow: 0 35px 55px rgba(0,0,0,0,0.1);
   }
 
+  /* contenedor izquierdo */
 .container .leftSide{
     position: relative;
     background: #302939;
     padding: 40px;
 }
 
+/* Seccion del perfil */
 .profileText{
     position: relative;
     display: flex;
@@ -42,6 +47,7 @@ body{
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
+/* imagen del perfil */
 .profileText .imgBx{
     position: relative;
     width: 200px;
@@ -50,6 +56,7 @@ body{
     overflow: hidden;
 }
 
+/* imagen selecionada */
 .profileText .imgBx img{
     position: absolute;
     top: 0;
@@ -59,6 +66,7 @@ body{
     object-fit: cover;
 }
 
+/* estilos del nombre y titulo del perfil */
 .profileText h2{
     color: #fff;
     font-size: 1.5em;
@@ -69,16 +77,19 @@ body{
     line-height: 1.4em;
 }
 
+/* estilos del subtitulo del perfil */
 .profileText h2 span{
     font-size: 0.8em;
     font-weight: 300;
 
 }
 
+/* seccion de informacion de contacto */
 .contactInfo{
     padding-top: 40px;
 }
 
+/* estilos del titulo de la seccion de infocontacto */
 .title{
     color: #fff;
     text-transform: uppercase;
@@ -87,54 +98,66 @@ body{
     margin-bottom: 20px;
 }
 
+/* estilos de la lista de informacion de contacto */
 .contactInfo ul{
     position: relative;
 }
 
+/* estilos de cada item de la lista de info contacto */
 .contactInfo ul li{
     position: relative;
     list-style: none;
     margin: 10px 0;
 }
 
+/* estilos del icono de cada item de la lista */
 .contactInfo ul li .icon{
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #e99b9b;
 }
+
+/* estilos del texto de cada item de la lista */
 .contactInfo ul li .text{
     font-size: 14px;
 }
 
+/* estilos del color del texto de cada item de la lista */
 .contactInfo ul li span{
     color: #fff;
     font-weight: 300;
 }
 
+/* estilos del color del enlace del texto de cada item de la lista*/
 .contactInfo ul li span a{
     color: #E99B9B;
 }
 
+/* estilos de la seccion educacion */
 .contactInfo.education li{
 margin-bottom: 15px;
 }
 
+/* estilos del titulo de la seccion educacion */
 .contactInfo.education h5{
     color: #e99b9b;
     font-weight: 500;
 }
 
+/* estilos del titulo secundario de la seccion educacion */
 .contactInfo.education h4:nth-child(2){
     color: #fff;
     font-weight: 500;
 }
 
+/* estilos de los h4 de la seccion educacion */
 .contactInfo.education h4{
     color: #fff;
     font-weight: 300;
 }
 
+/* estilos de la barra de porcentaje de idiomas */
 .contactInfo.language .percent{
     position: relative;
     width: 100%;
@@ -143,6 +166,8 @@ margin-bottom: 15px;
     display: block;
     margin-top: 5px;
 }
+
+/* estilos de la barra de porcentaje de idiomas en el div */
 .contactInfo.language .percent div{
     position: absolute;
     top: 0;
@@ -151,16 +176,19 @@ margin-bottom: 15px;
     background: pink;
 }
 
+/* estilos del lado derecho del contenedor */
 .container .rightSide{
     position: relative;
     background: #fff;
     padding: 40px;
 }
 
+/* seccion sobre mi */
 .about{
     margin-bottom: 0;
 }
 
+/* estilos del titulo de la seccion sobre mi*/
 .title2{
     color: #302939;
     text-transform: uppercase;
@@ -169,37 +197,44 @@ margin-bottom: 15px;
     margin-top: 10px;
 }
 
+/* estilos del texto de la seccion sobre mi*/
 p{
     color: #302939;
     text-align: justify;
 }
 
+/* estilos de la caja de cada experiencia  */
 .about .box{
     display: flex;
     flex-direction: row;
     margin: 20px 0;
 }
 
+/* estilos del año y compañia en la seccion sobre mi */
 .about .box .year_company{
     min-width: 150px;
 }
 
+/* estilo del titulo de la experiencia */
 .about .box .year_company h5{
     text-transform: uppercase;
     font-weight: #848c90;
     font-weight: 600;
 }
 
+/* estilos del titulo secundario de la experiencia */
 .about .box .text h4{
     text-transform: uppercase;
     color: #b66e6e ;
     font-size: 16px;
 }
 
+/* estilos del texto de la experiencia  */
 .about .box .text p{
     text-align: justify;
 }
 
+/* estilos de la caja de habilidades en la seeccion habilidades */
 .skills .box{
     position: relative;
     width: 100%;
@@ -209,12 +244,14 @@ p{
     align-items: center;
 }
 
+/* estilos del titulo de la habilidad */
 .skills .box h4{
     text-transform: uppercase;
     color: #302939;
     font-weight: 500;
 }
 
+/* estilos de la barra de progreso */
 .skills .box .percent{
     position: relative;
     width: 100%;
@@ -222,6 +259,7 @@ p{
     background: pink;
 }
 
+/* estilos de la barra de progreso con div */
 .skills .box .percent div{
     position: absolute;
     top: 0;
@@ -230,25 +268,28 @@ p{
     background: #b66e6e;
 }
 
+/* estilos de la lista de intereses */
 .interest ul{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 
+/* estilos de los elementos de la lista de intereses */
 .interest ul li{
 list-style: none;
 color: #333;
 font-weight: 500;
 margin: 10px 0;
-
 }
 
+/* estilos de los iconos */
 .interest ul li .fa{
     color: #b66e6e;
     font-size: 18px;
     width: 30px;
 }
 
+/* RESPONSIVIDAD */
 @media (max-width: 1000px){
     .container{
         margin: 10px;
